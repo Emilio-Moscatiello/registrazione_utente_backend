@@ -1,5 +1,6 @@
 package com.emiliomoscatiello.brief_registrazione_utente.model;
 
+import com.emiliomoscatiello.brief_registrazione_utente.validation.ValidPhoneNumber;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -29,7 +30,7 @@ public class User {
     private String username;
 
     @NotBlank(message = "Il telefono e' obbligatorio")
-    @Size(max = 50, message = "Il telefono deve essere al massimo 50 caratteri")
+    @ValidPhoneNumber
     @Column(name = "telefono", unique = true, nullable = false, length = 50)
     private String telefono;
 
