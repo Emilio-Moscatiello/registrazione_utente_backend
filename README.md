@@ -146,7 +146,7 @@ Liquibase eseguirà automaticamente le migration al primo avvio.
 
 | | Link |
 |---|---|
-| Backend | GitHub *(link da aggiungere)* |
+| Backend | GitHub https://github.com/Emilio-Moscatiello/registrazione_utente_backend |
 | Frontend | GitHub *(link da aggiungere)* |
 
 ---
